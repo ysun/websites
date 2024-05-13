@@ -14,6 +14,7 @@
 <script setup lang="ts">
 import $ from "jquery";
 import { ref, onMounted, onUnmounted } from "vue";
+import { Paperclip } from "@element-plus/icons-vue";
 
 const windows = window as any;
 const intervel = ref()
@@ -48,6 +49,8 @@ onUnmounted(() => {
   .card-title {
     height: 25px;
     font-size: 20px;
+    color: skyblue;
+    font-family: var(--fontFamily);
 
     .el-icon {
       position: relative;
@@ -56,7 +59,7 @@ onUnmounted(() => {
   }
 
   .div-card {
-    margin-top: -15px;
+    margin-top: -10px;
   }
 }
 </style>

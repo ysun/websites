@@ -13,6 +13,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+import { ElLoading } from "element-plus";
 import layoutbody from "./layoutbody.vue";
 import { get_usually, get_ai_soft, get_api, get_cloud_dist, get_msg_notif, get_notes, get_other, get_picture, get_python, get_web } from "@/api/data";
 
@@ -28,7 +29,8 @@ const python:any = ref([])
 const web:any = ref([])
 
 onMounted(() => {
-  get_usually().then((res: any) => { usually.value = res; });
+  const loadingService = ElLoading.service({fullscreen: true, text: "正在加载数据 ~"});
+  get_usually().then((res: any) => { usually.value = res; loadingService.close(); });
   get_ai_soft().then((res: any) => { ai_soft.value = res; });
   get_api().then((res: any) => { api.value = res; });
   get_cloud_dist().then((res: any) => { cloud_dist.value = res; });
