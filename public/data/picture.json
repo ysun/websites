@@ -1,0 +1,52 @@
+[
+    {
+        "name": "图片&绘图",
+        "data": [
+            {
+                "name": "TinyPNG",
+                "link": "https://tinypng.com/",
+                "imgUrl": "https://tinypng.com/images/favicon.ico"
+            },
+            {
+                "name": "图片无损压缩",
+                "link": "https://imagecompressor.com/zh/",
+                "imgUrl": "https://imagecompressor.com/images/imagecompressor/favicon.png"
+            },
+            {
+                "name": "I Love Img",
+                "link": "https://www.iloveimg.com/zh-cn",
+                "imgUrl": "https://www.iloveimg.com/img/favicons-img/favicon-16x16.png"
+            },
+            {
+                "name": "I Love PDF",
+                "link": "https://www.ilovepdf.com/zh-cn",
+                "imgUrl": "https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png"
+            },
+            {
+                "name": "Convertio",
+                "link": "https://convertio.co/zh/",
+                "imgUrl": "https://static.convertio.co/img/apple-touch-icon-180x180-precomposed.png"
+            },
+            {
+                "name": "PDF24",
+                "link": "https://tools.pdf24.org/zh/",
+                "imgUrl": "https://tools.pdf24.org/static/img/pdf24.png?v=658057a1"
+            },
+            {
+                "name": "SVG 编辑器",
+                "link": "https://www.jyshare.com/more/svgeditor/",
+                "imgUrl": "https://www.jyshare.com/more/svgeditor/images/favicon.svg"
+            },
+            {
+                "name": "草料二维码",
+                "link": "https://cli.im/",
+                "imgUrl": "https://static.clewm.net/static/images/favicon.ico"
+            },
+            {
+                "name": "ProcessOn",
+                "link": "https://www.processon.com/",
+                "imgUrl": "https://www.processon.com/public_login/favicon.983368c6.ico"
+            }
+        ]
+    }
+]

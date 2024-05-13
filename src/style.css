@@ -12,7 +12,7 @@ body {
 
 html,body {
   overflow: hidden;
-  background-image: url("./assets/img/background.jpg");
+  /* background-image: url("https://fastly.jsdelivr.net/gh/gwt805/static/imgs/bk-navgation-websites.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,7 +21,7 @@ html,body {
 
 @font-face {
   font-family: qiuhong;
-  src: url("./assets/otf/ChillCalligraphyChunQiu_QiuHong.ttf");
+  src: url("https://fastly.jsdelivr.net/gh/gwt805/static/otf/ChillCalligraphyChunQiu_QiuHong.otf"); /*./assets/otf/ChillCalligraphyChunQiu_QiuHong.ttf*/
 }
 
 /* 滚动条 */
