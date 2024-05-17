@@ -1,0 +1,42 @@
+[
+    {
+        "name": "求职神器",
+        "data": [
+            {
+                "name": "BOSS直聘",
+                "link": "https://www.zhipin.com/",
+                "imgUrl": "https://www.zhipin.com/favicon.ico"
+            },
+            {
+                "name": "智联招聘",
+                "link": "https://www.zhaopin.com/",
+                "imgUrl": "https://common-bucket.zhaopin.cn/img/zhilian-ico/zhilian-ico-1.0.0.png"
+            },
+            {
+                "name": "拉钩招聘",
+                "link": "https://www.lagou.com/",
+                "imgUrl": "https://www.lgstatic.com/lg-www-fed/common/static/favicon_faed927.ico"
+            },
+            {
+                "name": "前程无忧",
+                "link": "https://www.51job.com/",
+                "imgUrl": "https://img04.51jobcdn.com/im/mkt/pc/favicon/favicon_51.ico?20221122"
+            },
+            {
+                "name": "猎聘",
+                "link": "https://www.liepin.com/",
+                "imgUrl": "https://concat.lietou-static.com/fe-www-pc/v6/static/images/favicon.e6edbc00.ico"
+            },
+            {
+                "name": "LeetCode",
+                "link": "https://leetcode.cn/",
+                "imgUrl": "https://leetcode.cn/favicon.ico"
+            },
+            {
+                "name": "牛客网",
+                "link": "https://www.nowcoder.com/",
+                "imgUrl": "https://www.nowcoder.com/favicon.ico"
+            }
+        ]
+    }
+]

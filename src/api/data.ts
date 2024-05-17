@@ -10,6 +10,11 @@ export const get_api = async () => {
 };
 
 
+export const get_email = async () => {
+    return await http.get("/Navigation-Websites/data/email.json");
+};
+
+
 export const get_cloud_dist = async () => {
     return await http.get("/Navigation-Websites/data/disk.json");
 };
@@ -43,6 +48,12 @@ export const get_python = async () => {
 export const get_usually = async () => {
     return await http.get("/Navigation-Websites/data/usually.json");
 };
+
+
+export const get_works = async () => {
+    return await http.get("/Navigation-Websites/data/works.json");
+};
+
 
 
 export const get_web = async () => {

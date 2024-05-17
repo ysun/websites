@@ -21,7 +21,7 @@ html,body {
 
 @font-face {
   font-family: qiuhong;
-  src: url("https://fastly.jsdelivr.net/gh/gwt805/static/otf/ChillCalligraphyChunQiu_QiuHong.otf"); /*./assets/otf/ChillCalligraphyChunQiu_QiuHong.ttf*/
+  src: url("./assets/ttf/QiuHong_Zip.ttf"); /*  https://fastly.jsdelivr.net/gh/gwt805/static/otf/QiuHong_Zip.ttf*/
 }
 
 /* 滚动条 */

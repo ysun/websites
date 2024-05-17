@@ -1,27 +1,21 @@
 <template>
     <div class="main-body" v-for="item in data" :id="id">
-        <div class="card-title"><el-icon :size="20">
-                <Paperclip />
-            </el-icon><span>{{ item.name }}</span></div>
+        <div class="card-title"><el-icon :size="20"><Paperclip /></el-icon><span>{{ item.name }}</span></div>
         <div class="div-card">
             <div class="div-card-body" v-for="db in item.data" :title="db.name" @click="npage(db.link)">
-              <img :src="db.imgUrl">
-                <a>
-                    <p>{{ db.name }}</p>
-                </a>
+              <img :src="db.imgUrl"><a><p>{{ db.name }}</p></a>
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
 import { Paperclip } from "@element-plus/icons-vue";
 
 defineProps({
   data: Array<any>,
   id: String
-  })
+})
 
 const npage = (url: string) => { window.open(url); };
 </script>

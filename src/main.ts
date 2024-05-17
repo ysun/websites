@@ -11,7 +11,9 @@ import disableDevtool from'disable-devtool';
 disableDevtool({url: "https://www.baidu.com/",  timeOutUrl: "https://www.baidu.com/"});
 
 const app = createApp(App);
+
 app.use(ElementPlus, {
     locale: zhCn,
 });
+
 app.mount("#app");

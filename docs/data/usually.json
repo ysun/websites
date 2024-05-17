@@ -71,6 +71,11 @@
                 "name": "Stack Overflow",
                 "link": "https://stackoverflow.com/",
                 "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAAB3RJTUUH6AULEQ8MuuiinQAAAr5JREFUSMe9UztLHGEUPXdmzDrr7g7BFEkg+MiGNLqCBIsEK7FQRGJhIYKFKCiizNposHAgFrHRFWLQRgy6eVglSPIDLBVENyBISBHsElx0nHX2MfvdFB/bZBFdI7nV9zz33HPuBW4ozs/Hx3X9wYNS/yk3RcDzhADicds2Tb9/YOC/EwCYhRgclKuZmZOT0VGf7+HDGydQqPD01DT9/ra2wnkotLCQyRweEgFEL18qiqoqSjzO3N0NqOoNKiAE88GBrHR52bZNU9dnZwuJgsFY7Px8cVHeJ5OOc/9+efnU1EVodF3BbXtkJBisrATKynK5tTUAIAoENE1RgN5eIVRVUXI5IXI5Ifb2mImAzk7DmJ933e3tKytQ8FJKv7pq22Njuv70aSi0uHh2dnwcCsVi6XR7O8AMfPkim3Fnx/M8z/MiEYAIGB4GmIk6OkpWIJmcmLh92zBUNZtNp/v7iZiJZLMJkc8TAYqytJTL+Xw+3/q6pmWzrhuJMDMTxeNEzEK0thZ6pIDLvLEBqOo/WBCNlpc3NxMJQTQ0JCVub5dWfP6sKIpCND8fCMzNpVL7+3//PzuzrHD4zRvt8kSmqetbW0TMwNERMwAkErLCRELTVJV5ctLzMhlNGxtjvnXL8/r6JJFiPNedmampqarK5z0P6Oq6VAHHGR+vqGhoyOeFyOcjETlmdXVSxvp6ZrmXyYJBSXB31zBiMddtabkY17Kqq+/eLbpYWVlb+/hRwpRmiZyK09NoVNebmq6Kd0ULrkbI8wBpVSGIql44y/vPgFTKsh496ujw+4Hv379+JbIsQIhLCYRCsZjrUsnNmky+elVbaxjU+vv55mOAGR/43uam4wDh8I8fjjM9Dbx+XQR8XQuKiWebfinAk7e/jU/vgDvv00s/vxW/u/YYlhqplGWFw42NzADz6CgAEPX0/AF9aFWkjvGwMwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNS0xMVQxNzoxNToxMiswODowMB4j6GgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDUtMTFUMTc6MTU6MTIrMDg6MDBvflDUAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "LeetCode",
+                "link": "https://leetcode.cn/",
+                "imgUrl": "https://leetcode.cn/favicon.ico"
             }
         ]
     }
