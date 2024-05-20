@@ -2,9 +2,11 @@
     <div class="main-body" v-for="item in data" :id="id">
         <div class="card-title"><el-icon :size="20"><Paperclip /></el-icon><span>{{ item.name }}</span></div>
         <div class="div-card">
-            <div class="div-card-body" v-for="db in item.data" :title="db.name" @click="npage(db.link)">
+          <el-tooltip :content="db.name" :hide-after="0" raw-content v-for="db in item.data">
+            <div class="div-card-body" @click="npage(db.link)">
               <img :src="db.imgUrl"><a><p>{{ db.name }}</p></a>
             </div>
+          </el-tooltip>
         </div>
     </div>
 </template>
@@ -56,7 +58,6 @@ const npage = (url: string) => { window.open(url); };
         width: 100% !important;
       }
     }
-
     .div-card-body {
       width: calc(100% / 6 - 10px);
       height: 50px;

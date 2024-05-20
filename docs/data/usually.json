@@ -33,6 +33,11 @@
                 "imgUrl": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/favicons/favicon-32x32.png"
             },
             {
+                "name": "知乎",
+                "link": "https://www.zhihu.com/",
+                "imgUrl": "https://static.zhihu.com/heifetz/favicon.ico"
+            },
+            {
                 "name": "博客园",
                 "link": "https://www.cnblogs.com/",
                 "imgUrl": "https://up.mckuai.com/20200616/141723307103.jpg"

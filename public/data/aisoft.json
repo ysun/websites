@@ -76,6 +76,11 @@
                 "name": "CodeGeeX-代码助手",
                 "link": "https://codegeex.cn/",
                 "imgUrl": "https://codegeex.cn/assets/images/only_logo_dark.png"
+            },
+            {
+                "name": "CodeFuse-代码助手",
+                "link": "https://codefuse.alipay.com/",
+                "imgUrl": "https://mdn.alipayobjects.com/huamei_o7lflc/afts/img/A*B-VWQafj0FsAAAAAAAAAAAAADkO7AQ/original"
             }
         ]
     }
