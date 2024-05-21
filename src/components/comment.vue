@@ -6,7 +6,7 @@
       </el-icon><span>留言板</span>
     </div>
     <div class="div-card">
-      <div id="SOHUCS" sid="焘焘导航网"></div>
+      <div id="SOHUCS" sid="导航网"></div>
     </div>
   </div>
 </template>

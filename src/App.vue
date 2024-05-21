@@ -34,7 +34,7 @@ import { Operation } from "@element-plus/icons-vue";
 const timeintervel = ref()
 const datetime = ref("");
 const isCollapse = ref(false)
-
+const yyfooter = ref()
 const sitmenu = () => { isCollapse.value ? isCollapse.value = false : isCollapse.value = true }
 
 watch (isCollapse, (newVal, oldVal) => {
@@ -76,7 +76,15 @@ const getDateTime = () => {
   datetime.value = weekday_month_year_date_time;
 };
 
-onMounted(() => { timeintervel.value = setInterval(getDateTime, 1000); })
+onMounted(() => {
+  timeintervel.value = setInterval(getDateTime, 1000);
+  yyfooter.value = setInterval(()=>{
+    if (document.getElementsByClassName("module-cmt-footer")[0]) {
+      document.getElementsByClassName("module-cmt-footer")[0].remove()
+      clearInterval(yyfooter.value)
+    }
+  }, 1000)
+})
 
 onUnmounted(()=>{clearInterval(timeintervel.value)})
 

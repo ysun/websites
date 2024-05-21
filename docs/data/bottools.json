@@ -1,0 +1,27 @@
+[
+    {
+        "name": "装机工具",
+        "data": [
+            {
+                "name": "微软装机工具 - WIN 10",
+                "link": "https://www.microsoft.com/zh-cn/software-download/windows10",
+                "imgUrl": "https://www.microsoft.com/favicon.ico"
+            },
+            {
+                "name": "微软装机工具 - WIN 11",
+                "link": "https://www.microsoft.com/zh-cn/software-download/windows11",
+                "imgUrl": "https://www.microsoft.com/favicon.ico"
+            },
+            {
+                "name": "Ventoy - 跨平台",
+                "link": "https://www.ventoy.net/cn/download.html",
+                "imgUrl": "https://www.ventoy.net/favicon.ico"
+            },
+            {
+                "name": "UltraISO软碟通",
+                "link": "https://www.ultraiso.net/",
+                "imgUrl": "https://www.ultraiso.net/favicon.ico"
+            }
+        ]
+    }
+]

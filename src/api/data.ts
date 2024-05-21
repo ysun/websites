@@ -55,7 +55,20 @@ export const get_works = async () => {
 };
 
 
-
 export const get_web = async () => {
     return await http.get("/Navigation-Websites/data/web.json");
+};
+
+
+export const get_bottools = async () => {
+    return await http.get("/Navigation-Websites/data/bottools.json");
+};
+
+
+export const get_codeware = async () => {
+    return await http.get("/Navigation-Websites/data/codeware.json");
+};
+
+export const get_ui = async () => {
+    return await http.get("/Navigation-Websites/data/ui.json");
 };
