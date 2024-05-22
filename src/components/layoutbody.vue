@@ -50,14 +50,24 @@ const npage = (url: string) => { window.open(url); };
       flex: auto;
     }
 
-    @media screen and (max-width: 550px) {
-      display: flex;
-      flex-direction: column;
-
+    @media screen and (max-width: 450px) {
       .div-card-body {
         width: 100% !important;
       }
     }
+    @media screen and (min-width: 450px) and (max-width: 768px) {
+      gap: 15px;
+      .div-card-body {
+        width: calc(100% / 2 - 10px) !important;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      gap: 15px;
+      .div-card-body {
+        width: calc(100% / 3 - 10px) !important;
+      }
+    }
+    
     .div-card-body {
       width: calc(100% / 6 - 10px);
       height: 50px;

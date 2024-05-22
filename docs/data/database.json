@@ -1,0 +1,52 @@
+[
+    {
+        "name": "数据库",
+        "data": [
+            {
+                "name": "DBeaver",
+                "link": "https://dbeaver.io/",
+                "imgUrl": "https://dbeaver.io/wp-content/uploads/2016/07/beaver_icon_32x32.png"
+            },
+            {
+                "name": "SQLynx",
+                "link": "http://www.maicongs.com/#/home/probation/SQLynx",
+                "imgUrl": "http://www.maicongs.com/favicon.png"
+            },
+            {
+                "name": "DbGage",
+                "link": "https://dbgate.org/",
+                "imgUrl": "https://dbgate.org/assets/img/favicon.ico"
+            },
+            {
+                "name": "MySQL",
+                "link": "https://downloads.mysql.com/archives/installer/",
+                "imgUrl": "https://labs.mysql.com/common/themes/sakila/favicon.ico"
+            },
+            {
+                "name": "PostgreSQL",
+                "link": "https://postgresql.p2hp.com/download/index.html",
+                "imgUrl": "https://postgresql.p2hp.com/favicon.ico"
+            },
+            {
+                "name": "MongoDB",
+                "link": "https://www.mongodb.com/try/download/community",
+                "imgUrl": "https://www.mongodb.com/assets/images/global/favicon.ico"
+            },
+            {
+                "name": "Redis",
+                "link": "https://www.redis.net.cn/download/",
+                "imgUrl": "https://www.redis.net.cn/Application/Home/View/Public/img/icon.png"
+            },
+            {
+                "name": "Apache Hive",
+                "link": "https://dlcdn.apache.org/hive/",
+                "imgUrl": "https://hive.apache.org/images/hive.svg"
+            },
+            {
+                "name": "Apache Spark",
+                "link": "https://spark.apache.org/downloads.html",
+                "imgUrl": "https://spark.apache.org/favicon.ico"
+            }
+        ]
+    }
+]

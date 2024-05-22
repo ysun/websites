@@ -18,6 +18,16 @@
                 "imgUrl": "https://nodejs.org/static/images/favicons/favicon.png"
             },
             {
+                "name": "Anaconda3 - 清华镜像站",
+                "link": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/",
+                "imgUrl": "https://mirrors.tuna.tsinghua.edu.cn/static/img/favicon.png"
+            },
+            {
+                "name": "Docker",
+                "link": "https://docs.docker.com/get-docker/",
+                "imgUrl": "https://docker.p2hp.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png"
+            },
+            {
                 "name": "VS Code",
                 "link": "https://code.visualstudio.com/",
                 "imgUrl": "https://code.visualstudio.com/favicon.ico"
@@ -28,9 +38,14 @@
                 "imgUrl": "https://www.jetbrains.com.cn/icon-512.png"
             },
             {
-                "name": "Anaconda3 - 清华镜像站",
-                "link": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/",
-                "imgUrl": "https://mirrors.tuna.tsinghua.edu.cn/static/img/favicon.png"
+                "name": "HBuilderX",
+                "link": "https://www.dcloud.io/hbuilderx.html",
+                "imgUrl": "https://ask.dcloud.net.cn/static/css/classblack/img/favicon.png"
+            },
+            {
+                "name": "Sublime Text",
+                "link": "https://www.sublimetext.com/",
+                "imgUrl": "https://www.sublimetext.com/favicon.ico"
             }
         ]
     }

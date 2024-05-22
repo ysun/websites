@@ -3,7 +3,8 @@
   <layoutbody :data="web" id="web" />
   <layoutbody :data="ui" id="ui" />
   <layoutbody :data="python" id="python" />
-  <layoutbody :data="codeware" id="codeware" /> 
+  <layoutbody :data="codeware" id="codeware" />
+  <layoutbody :data="database" id="database" />
   <layoutbody :data="ai_soft" id="ai_soft" />
   <layoutbody :data="email" id="email" />
   <layoutbody :data="cloud_dist" id="cloud_dist" />
@@ -22,20 +23,21 @@ import { ElLoading } from "element-plus";
 import layoutbody from "./layoutbody.vue";
 import {
   get_usually,
+  get_web,
+  get_ui,
+  get_python,
+  get_codeware,
+  get_database,
   get_ai_soft,
-  get_api,
   get_email,
   get_cloud_dist,
   get_msg_notif,
   get_notes,
-  get_other,
+  get_api,
   get_picture,
-  get_python,
   get_works,
-  get_web,
   get_bottools,
-  get_codeware,
-  get_ui
+  get_other
 } from "@/api/data";
 
 const usually:any = ref([])
@@ -53,6 +55,7 @@ const web:any = ref([])
 const bottools:any = ref([])
 const codeware:any = ref([])
 const ui:any = ref([])
+const database:any = ref([])
 
 onMounted(() => {
   const loadingService = ElLoading.service({fullscreen: true, text: "正在加载数据 ~"});
@@ -61,6 +64,7 @@ onMounted(() => {
   get_ui().then((res: any) => { ui.value = res; });
   get_python().then((res: any) => { python.value = res; });
   get_codeware().then((res: any) => { codeware.value = res; });
+  get_database().then((res: any) => { database.value = res; });
   get_ai_soft().then((res: any) => { ai_soft.value = res; });
   get_email().then((res: any) => { email.value = res; });
   get_cloud_dist().then((res: any) => { cloud_dist.value = res; });
