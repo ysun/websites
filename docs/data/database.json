@@ -10,7 +10,7 @@
             {
                 "name": "SQLynx",
                 "link": "http://www.maicongs.com/#/home/probation/SQLynx",
-                "imgUrl": "http://www.maicongs.com/favicon.png"
+                "imgUrl": "data:image/png;base64,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"
             },
             {
                 "name": "DbGage",
@@ -46,6 +46,11 @@
                 "name": "Apache Spark",
                 "link": "https://spark.apache.org/downloads.html",
                 "imgUrl": "https://spark.apache.org/favicon.ico"
+            },
+            {
+                "name": "Apache Hadoop",
+                "link": "https://www.hadoop.org.cn/",
+                "imgUrl": "https://hadoop.apache.org/elephant.png"
             }
         ]
     }
