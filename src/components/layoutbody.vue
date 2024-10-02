@@ -25,6 +25,7 @@ const npage = (url: string) => { window.open(url); };
 <style scoped lang="less">
 .main-body {
   width: 100%;
+  user-select: none;
 
   .card-title {
     height: 25px;

@@ -36,6 +36,11 @@
                 "name": "牛客网",
                 "link": "https://www.nowcoder.com/",
                 "imgUrl": "https://www.nowcoder.com/favicon.ico"
+            },
+            {
+                "name": "在线制作简历-简历本",
+                "link": "https://www.jianliben.com/",
+                "imgUrl": "https://www.jianliben.com/favicon.ico"
             }
         ]
     }

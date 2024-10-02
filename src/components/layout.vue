@@ -2,6 +2,7 @@
   <layoutbody :data="usually" id="usually" />
   <layoutbody :data="web" id="web" />
   <layoutbody :data="ui" id="ui" />
+  <layoutbody :data="ui_plugin" id="ui_plugin" />
   <layoutbody :data="python" id="python" />
   <layoutbody :data="codeware" id="codeware" />
   <layoutbody :data="database" id="database" />
@@ -25,6 +26,7 @@ import {
   get_usually,
   get_web,
   get_ui,
+  get_ui_plugin,
   get_python,
   get_codeware,
   get_database,
@@ -55,6 +57,7 @@ const web:any = ref([])
 const bottools:any = ref([])
 const codeware:any = ref([])
 const ui:any = ref([])
+const ui_plugin:any = ref([])
 const database:any = ref([])
 
 onMounted(() => {
@@ -62,6 +65,7 @@ onMounted(() => {
   get_usually().then((res: any) => { usually.value = res; loadingService.close(); });
   get_web().then((res: any) => { web.value = res; });
   get_ui().then((res: any) => { ui.value = res; });
+  get_ui_plugin().then((res: any) => { ui_plugin.value = res; });
   get_python().then((res: any) => { python.value = res; });
   get_codeware().then((res: any) => { codeware.value = res; });
   get_database().then((res: any) => { database.value = res; });
@@ -77,70 +81,3 @@ onMounted(() => {
   get_other().then((res: any) => { other.value = res; });
 });
 </script>
-
-<style scoped lang="less">
-.main-body {
-  width: 100%;
-
-  .card-title {
-    height: 25px;
-    font-size: 20px;
-
-    .el-icon {
-      position: relative;
-      top: 3px;
-    }
-  }
-
-  .div-card {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    &::after {
-      content: '';
-      flex: auto;
-    }
-
-    @media screen and (max-width: 550px) {
-      display: flex;
-      flex-direction: column;
-
-      .div-card-body {
-        width: 100% !important;
-      }
-    }
-
-    .div-card-body {
-      width: calc(100% / 6 - 10px);
-      height: 50px;
-      display: flex;
-      overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.2);
-      opacity: 0.8;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      backdrop-filter: blur(10px);
-
-      img {
-        width: 30px;
-        height: 30px;
-        margin: auto 0;
-        padding-left: 10px;
-      }
-
-      a {
-        text-decoration: none;
-        line-height: 50px;
-        padding-left: 10px;
-      }
-    }
-
-    .div-card-body:hover {
-      opacity: 0.5;
-    }
-  }
-}
-</style>

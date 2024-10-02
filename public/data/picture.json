@@ -38,6 +38,11 @@
                 "imgUrl": "https://www.jyshare.com/more/svgeditor/images/favicon.svg"
             },
             {
+                "name": "Aconvert",
+                "link": "https://www.aconvert.com/cn/",
+                "imgUrl": "https://www.aconvert.com/favicon.ico"
+            },
+            {
                 "name": "草料二维码",
                 "link": "https://cli.im/",
                 "imgUrl": "https://static.clewm.net/static/images/favicon.ico"

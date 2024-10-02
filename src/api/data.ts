@@ -12,6 +12,10 @@ export const get_ui = async () => {
     return await http.get("/Navigation-Websites/data/ui.json");
 };
 
+export const get_ui_plugin = async () => {
+    return await http.get("/Navigation-Websites/data/ui_plugin.json");
+};
+
 export const get_python = async () => {
     return await http.get("/Navigation-Websites/data/python.json");
 };

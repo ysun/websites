@@ -53,9 +53,14 @@
                 "imgUrl": "https://statics.moonshot.cn/kimi-chat/favicon.ico"
             },
             {
+                "name": "DeepSeek",
+                "link": "https://chat.deepseek.com/",
+                "imgUrl": "https://chat.deepseek.com/favicon.svg"
+            },
+            {
                 "name": "火山写作",
                 "link": "https://www.writingo.net/",
-                "imgUrl": "https://www.jyshare.com/wp-content/uploads/2024/01/hsxz.png"
+                "imgUrl": "https://lf3-transtudio.bytetos.com/obj/lab-mt-public/fe/writingo/web/favicon.svg"
             },
             {
                 "name": "讯飞星火",
@@ -81,6 +86,16 @@
                 "name": "CodeFuse-代码助手",
                 "link": "https://codefuse.alipay.com/",
                 "imgUrl": "https://mdn.alipayobjects.com/huamei_o7lflc/afts/img/A*B-VWQafj0FsAAAAAAAAAAAAADkO7AQ/original"
+            },
+            {
+                "name": "MarsCode-代码助手",
+                "link": "https://www.marscode.com/",
+                "imgUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/marscode-favicon.ico"
+            },
+            {
+                "name": "Raccoon-代码助手",
+                "link": "https://raccoon.sensetime.com/",
+                "imgUrl": "https://sta.xiaohuanxiong.com/assets/web/logo.svg"
             }
         ]
     }

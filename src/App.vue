@@ -3,7 +3,8 @@
     <el-container>
       <el-header>
         <img src="/src/assets/img/logo.png" alt="Logo" srcset="" draggable="false">
-        <el-text class="mx-1 timeclock" type="info">{{ datetime }}</el-text>
+        <el-text class="mx-1 timeclock" type="info">{{ datetime }}<el-icon @click="changyan_model=true"><Comment /></el-icon></el-text>
+        
       </el-header>
       <el-container>
         <el-aside  id="menuRef">
@@ -27,7 +28,7 @@
 <script setup lang="ts">
 import lmenu from "@/components/menu.vue";
 import layout from "@/components/layout.vue";
-import { ref, watch, onMounted,onUnmounted } from "vue";
+import { ref, provide,watch, onMounted,onUnmounted } from "vue";
 import comment from "@/components/comment.vue";
 import { Operation } from "@element-plus/icons-vue";
 
@@ -35,6 +36,8 @@ const timeintervel = ref()
 const datetime = ref("");
 const isCollapse = ref(false)
 const yyfooter = ref()
+const changyan_model = ref(false)
+provide("changyan_model", changyan_model)
 const sitmenu = () => { isCollapse.value ? isCollapse.value = false : isCollapse.value = true }
 
 watch (isCollapse, (newVal, oldVal) => {
@@ -135,6 +138,7 @@ document.addEventListener('mousewheel', (e: any) => {
       display: flex;
       justify-content: space-between;
       font-family: var(--fontFamily);
+      user-select: none;
 
       @media screen and (max-width: 350px) {
         img {
@@ -151,6 +155,10 @@ document.addEventListener('mousewheel', (e: any) => {
       .el-text {
         line-height: 40px;
         font-size: 20px;
+
+        .el-icon {
+          margin-left: 10px;
+        }
       }
     }
 
@@ -198,6 +206,7 @@ document.addEventListener('mousewheel', (e: any) => {
           left: 0;
           line-height: 20px;
           text-align: center;
+          user-select: none;
         }
       }
     }
