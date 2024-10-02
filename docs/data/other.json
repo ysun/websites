@@ -18,6 +18,11 @@
                 "imgUrl": "https://open.techgrow.cn/1.2.2/static/img/favicon.ico"
             },
             {
+                "name": "微信公众平台",
+                "link": "https://mp.weixin.qq.com/",
+                "imgUrl": "https://res.wx.qq.com/a/fed_upload/9300e7ac-cec5-4454-b75c-f92260dd5b47/logo-mp.ico"
+            },
+            {
                 "name": "Cpolar 内网穿透",
                 "link": "https://www.cpolar.com/download",
                 "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVRYhe2WP2hTURTGfzdIESkKRbQ8RRxEiliNoqJSESKIgjpcELmCi7soFKcKDh1KBwWHIoLgoPDA4S4OSgkdIor/iLiUIiIiGjvFoEFESp7DvSGH+F7yXtNO9oOQcw/ffee7/z9Ywf8OlYWsw2g1UACOANuAASAH1IAPwFOgaI36taQCfOErwCiwvgu9CtwAblqjfvcsQIdRADwC9op0HSgDFaABbADybeLKwGlrVGXRAnQYDQDPgCGf+giMAdYa9aeNm8MtzwSwz6ffA4esUdWkGqs6CQCmRPESbkQ/4ojWqAZQ1GFUAu4B54HtwB3gbFKBxBnQYXQYN3qAL8CwNarWRXCzbx/wErcsAEetUaU4bq7Ddy6JeCxtcQC/PFdFajSJGyvA7/ozvlkDHqYtLjCD2zMAJ3QY9acWgJu6NT4upjlO7fB7Yto3+4CDWQQMifht1uIC70S8M4uAQMSfexAg+27KImCdiGOPXUrURbw2i4ClQqMbIUnATxHH7t6UkH3rcYQkAfMiDhI4aSD7fssiYE7Eu3sQMCzi2SwCykDz7Bf8Q7MYFPz/AvA8tQBvKJqXSAAcz1pZh1Ee2OWbM0lXeaeRTYl4wj8waYvngEmRupXE7SSgSGsW8sDtDEtxndasFYEnXli/DqMR7zOA7oZkM/AaGPSpaeCyNWquA38S5wXAOab91qiKDqOtuOc9wF1ux6xRb9JYsh3AY2CLSL8CXgBfcZfNRpwLGqFlcj4BJ5tidRiNA9fENx5Yoy50c0RYo2Z1GO3BWa2LvsAB/4vDAnAX5yGkFfvexqtBdls+CGj+teVVWrbcxhlR7wfuA6dwR/KcNWq+nbfs6OFOWcHy4C/+0bpQzRFfXgAAAABJRU5ErkJggg=="
