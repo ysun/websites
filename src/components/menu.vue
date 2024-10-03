@@ -48,7 +48,7 @@
         <el-icon><CaretRight /></el-icon><template #title>装机工具</template>
     </el-menu-item>
     <el-menu-item index="17" @click="scrollToDiv('other')">
-        <el-icon><CaretRight /></el-icon><template #title>其他工具</template>
+        <el-icon><CaretRight /></el-icon><template #title>其它工具</template>
     </el-menu-item>
 </template>
 
