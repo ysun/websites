@@ -58,6 +58,11 @@
                 "imgUrl": "https://cdn.rtool.cn/build/assets/favicon-B___NYMH.svg"
             },
             {
+                "name": "Textbus 富文本库",
+                "link": "https://textbus.io/",
+                "imgUrl": "https://textbus.io/favicon.ico"
+            },
+            {
                 "name": "字体抽取重组",
                 "link": "https://ecomfe.github.io/fontmin/",
                 "imgUrl": "https://ecomfe.github.io/fontmin/favicon.ico"

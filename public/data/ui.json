@@ -61,6 +61,11 @@
                 "name": "Layui - Vue",
                 "link": "http://www.layui-vue.com/zh-CN/index",
                 "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAYFBMVEU3PUg2P0ota2cta2gwXl82QUonjH4rdW82QUsqe3I0SFA1RU4ni30pgHUsc201Q00tbWk2PkkreHEreXE0S1IohnowX181RE00SVAvYWEuamcuaGYvZGM2QEsyU1cAAABir9gwAAAAAWJLR0QfBQ0QvQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAAd0SU1FB+gFCxAoDo/hG+MAAABKSURBVBjTY2AgCzAyMTGzIAuwsrGxsSMLcJAnwMnFxcANt4UHKMLLxy8gCBMRAgoIMwtwwPWIiAJFxMQlEKaIS0pJy8jKkecvBgAfUgLIail4xAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNS0xMVQxNjo0MDoxNCswODowMDcbY9EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDUtMTFUMTY6NDA6MTQrMDg6MDBGRtttAAAAAElFTkSuQmCC"
+            },
+            {
+                "name": "ZUI 3",
+                "link": "https://openzui.com/",
+                "imgUrl": "https://openzui.com/favicon.svg"
             }
         ]
     }

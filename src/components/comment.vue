@@ -25,11 +25,11 @@ onMounted(() => {
 
   intervel1.value = setInterval(() => {
     const lyb_list:any = document.getElementsByClassName("module-cmt-list");
-    const lyb_list_block:any = document.getElementsByClassName("type-list");
+    const lyb_list_block:any = document.getElementsByClassName("type-list"); // *人参与,*条评论
     const lyb_list_block1:any = document.getElementsByClassName("section-service-w");
     const lyb_list_block2:any = document.getElementsByClassName("cmt-list-type");
-    const lyb_list_block3:any = document.getElementsByClassName("block-cont-gw");
-    const lyb_list_block4:any = document.getElementsByClassName("wrap-action-gw");
+    // const lyb_list_block3:any = document.getElementsByClassName("block-cont-gw");
+    // const lyb_list_block4:any = document.getElementsByClassName("wrap-action-gw");
 
     if (lyb_list_block.length != 0) {
       lyb_list_block[0].style.display = "none";
@@ -49,16 +49,16 @@ onMounted(() => {
       lyb_list[0].style.overflow = "auto";
       
     }
-    if (lyb_list_block3.length != 0) {
-      for (let index = 0; index < lyb_list_block3.length; index++) {
-        lyb_list_block3[index].style.borderBottom = "none";
-      }
-    }
-    if (lyb_list_block4.length != 0) {
-      for (let index = 0; index < lyb_list_block4.length; index++) {
-        lyb_list_block4[index].style.display = "none";
-      }
-    }
+    // if (lyb_list_block3.length != 0) {
+    //   for (let index = 0; index < lyb_list_block3.length; index++) {
+    //     lyb_list_block3[index].style.borderBottom = "none";
+    //   }
+    // }
+    // if (lyb_list_block4.length != 0) {
+    //   for (let index = 0; index < lyb_list_block4.length; index++) {
+    //     lyb_list_block4[index].style.display = "none";
+    //   }
+    // }
   }, 1000)
 
   intervel1.value = setInterval(() => {
