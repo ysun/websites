@@ -3,11 +3,6 @@
         "name": "Python 相关",
         "data": [
             {
-                "name": "Anaconda 下载地址",
-                "link": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/",
-                "imgUrl": "https://img0.baidu.com/it/u=3651608264,3558647020&fm=253&fmt=auto&app=138&f=JPG?w=268&h=275"
-            },
-            {
                 "name": "Django",
                 "link": "https://django.p2hp.com/",
                 "imgUrl": "https://static.djangoproject.com/img/icon-touch.e4872c4da341.png"

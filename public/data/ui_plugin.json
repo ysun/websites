@@ -28,6 +28,11 @@
                 "imgUrl": "https://img2.baidu.com/it/u=1353203257,3335217834&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
             },
             {
+                "name": "阿里巴巴矢量图标库",
+                "link": "https://www.iconfont.cn/",
+                "imgUrl": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
+            },
+            {
                 "name": "VaTex",
                 "link": "https://github.com/Shimada666/VaTex",
                 "imgUrl": "https://img2.baidu.com/it/u=1353203257,3335217834&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
@@ -55,12 +60,12 @@
             {
                 "name": "Driver.js 页面引导库",
                 "link": "https://driverjs.cn/",
-                "imgUrl": "https://cdn.rtool.cn/build/assets/favicon-B___NYMH.svg"
+                "imgUrl": "https://cdn.rtool.cn/build/assets/img/favicon.svg"
             },
             {
-                "name": "Textbus 富文本库",
-                "link": "https://textbus.io/",
-                "imgUrl": "https://textbus.io/favicon.ico"
+                "name": "wangEditor 富文本库",
+                "link": "https://www.wangeditor.com/",
+                "imgUrl": "https://www.wangeditor.com/favicon.ico"
             },
             {
                 "name": "字体抽取重组",

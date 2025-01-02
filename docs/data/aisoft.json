@@ -96,6 +96,11 @@
                 "name": "Raccoon-代码助手",
                 "link": "https://raccoon.sensetime.com/",
                 "imgUrl": "https://sta.xiaohuanxiong.com/assets/web/logo.svg"
+            },
+            {
+                "name": "MarsCode-代码助手",
+                "link": "https://www.marscode.cn/",
+                "imgUrl": "https://lf-cdn.marscode.cn/obj/marscode-bucket-cn/marscode-favicon.ico"
             }
         ]
     }
