@@ -1,215 +1,160 @@
 <template>
-  <div class="common-layout">
     <el-container>
-      <el-header>
-        <img src="/src/assets/img/logo.png" alt="Logo" srcset="" draggable="false">
-        <el-text class="mx-1 timeclock" type="info">{{ datetime }}<el-icon @click="changyan_model=true"><Comment /></el-icon></el-text>
-        
-      </el-header>
-      <el-container>
-        <el-aside  id="menuRef">
-          <div @click="sitmenu"><el-icon :size="30"><Operation /></el-icon></div>
-          <el-menu default-active="" class="el-menu-vertical-demo" :collapse="isCollapse" :collapse-transition="false">
-            <lmenu />
-          </el-menu>
+        <el-aside id="menuRef">
+            <el-menu default-active="常用站点" class="el-menu-vertical-demo" :collapse="false" :collapse-transition="false">
+                <el-menu-item :index="item.name" @click="scrollToDiv(item.name)" v-for="item in data">
+                    <el-icon><CaretRight /></el-icon><template #title>{{ item.name }}</template>
+                </el-menu-item>
+            </el-menu>
         </el-aside>
-        <el-container id="bodyRef">
-          <el-main>
-            <layout />
-            <comment />
-          </el-main>
-          <el-footer>Copyright © gwt805 2024</el-footer>
-        </el-container>
-      </el-container>
+        <div id="bodyRef">
+            <el-main>
+                <div class="main-body" v-for="item in data" :id="item.name">
+                    <div class="card-title"><el-icon :size="20"><Paperclip /></el-icon><span>{{ item.name }}</span></div>
+                    <div class="div-card">
+                        <el-tooltip :content="db.name" :hide-after="0" raw-content v-for="db in item.data">
+                            <div class="div-card-body" @click="npage(db.link)"><img :src="db.imgUrl"><a><p>{{ db.name }}</p></a></div>
+                        </el-tooltip>
+                    </div>
+                </div>
+            </el-main>
+        </div>
     </el-container>
-  </div>
 </template>
 
 <script setup lang="ts">
-import lmenu from "@/components/menu.vue";
-import layout from "@/components/layout.vue";
-import { ref, provide,watch, onMounted,onUnmounted } from "vue";
-import comment from "@/components/comment.vue";
-import { Operation } from "@element-plus/icons-vue";
+import { ref, onMounted } from "vue";
+import { getdata } from "@/api/data";
+import { ElLoading } from "element-plus";
+import { Paperclip } from "@element-plus/icons-vue";
 
-const timeintervel = ref()
-const datetime = ref("");
-const isCollapse = ref(false)
-const yyfooter = ref()
-const changyan_model = ref(false)
-provide("changyan_model", changyan_model)
-const sitmenu = () => { isCollapse.value ? isCollapse.value = false : isCollapse.value = true }
+const data: any = ref([])
 
-watch (isCollapse, (newVal, oldVal) => {
-  console.log(newVal,oldVal)
-  const menuref:any = document.getElementById("menuRef")
-  const bodyref:any = document.getElementById("bodyRef")
-  if (isCollapse.value) {
-    menuref.style.width = "65px";
-    bodyref.style.width =  bodyref.offsetWidth + 135 + 'px';
-    bodyref.style.marginLeft = "65px"
-  }
-  else {
-    menuref.style.width = "200px";
-    bodyref.style.width =  bodyref.offsetWidth - 135 + 'px';
-    bodyref.style.marginLeft = "200px"
-  }
-}, { deep: true });
-
-
-const timeReplace = (num: number) => {
-  if (num < 10) { return "0" + num; }
-  else { return num; }
+const scrollToDiv = (id: string) => {
+    const testDiv = document.getElementById(id);
+    if (testDiv) { testDiv.scrollIntoView(true) }
 };
 
-const getDateTime = () => {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
-  const date = now.getDate();
-  const day = now.getDay();
-  const hour = now.getHours();
-  const minute = now.getMinutes();
-  const second = now.getSeconds();
-
-  const week = ["日", "一", "二", "三", "四", "五", "六"];
-  const weekday = week[day];
-  const weekday_month_year_date_time = `${year} 年 ${timeReplace(month)} 月 ${timeReplace(date)} 日 (${weekday}) ${timeReplace(hour)}:${timeReplace(minute)}:${timeReplace(second)}`;
-
-  datetime.value = weekday_month_year_date_time;
-};
+const npage = (url: string) => { window.open(url) };
 
 onMounted(() => {
-  timeintervel.value = setInterval(getDateTime, 1000);
-  yyfooter.value = setInterval(()=>{
-    if (document.getElementsByClassName("module-cmt-footer")[0]) {
-      document.getElementsByClassName("module-cmt-footer")[0].remove()
-      clearInterval(yyfooter.value)
-    }
-  }, 1000)
+    const loadingService = ElLoading.service({fullscreen: true, text: "正在加载资源 ~"});
+    getdata().then((res: any) => { data.value = res; loadingService.close(); });
 })
-
-onUnmounted(()=>{clearInterval(timeintervel.value)})
-
-window.addEventListener("resize", () => {
-  const menuref:any = document.getElementById("menuRef")
-  const bodyref:any = document.getElementById("bodyRef")
-
-  if (isCollapse.value) {
-    menuref.style.width = "65px";
-    bodyref.style.width =  window.innerWidth - 65 + 'px';
-    bodyref.style.marginLeft = "65px"
-  }
-  else {
-    menuref.style.width = "200px";
-    bodyref.style.width =  window.innerWidth - 200 + 'px';
-    bodyref.style.marginLeft = "200px"
-  }
-})
-
-document.addEventListener('keydown', (event) => {
-  if ((event.ctrlKey === true || event.metaKey === true) && (event.which === 61 || event.which === 107 || event.which === 173 || event.which === 109 || event.which === 187 || event.which === 189)) {
-    event.preventDefault();
-  }
-}, false);
-
-document.addEventListener('mousewheel', (e: any) => {
-  if ((e.wheelDelta && e.ctrlKey) || e.detail) {
-    e.preventDefault();
-  }
-}, {
-  capture: false,
-  passive: false
-});
 </script>
+
 <style scoped lang="less">
-.common-layout {
-  .el-container {
-    width: 100%;
-    height: 100%;
+.el-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  user-select: none;
+  top: 0;
+  left: 0;
 
-    .el-header {
-      width: 100%;
-      height: 40px;
-      border-bottom: 1px solid gray;
-      position: fixed;
-      left: 0;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      font-family: var(--fontFamily);
-      user-select: none;
+  #menuRef {
+      width: 200px;
+      height: 100%;
+      border-right: 1px solid gray;
 
-      @media screen and (max-width: 350px) {
-        img {
-          display: none;
-        }
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
-      }
-
-      .el-text {
-        line-height: 40px;
-        font-size: 20px;
-
-        .el-icon {
-          margin-left: 10px;
-        }
-      }
-    }
-
-    .el-container {
-      width: 100%;
-      height: calc(100% - 40px);
-      position: absolute;
-      top: 40px;
-      left: 0;
-
-      .el-aside {
-        width: 200px;
-        height: 100%;
-        border-right: 1px solid gray;
-
-        div {
+      div {
           width: 100%;
           height: 30px;
           border-bottom: 1px solid gray;
           display: flex;
           justify-content: center;
-        }
+      }
 
-        .el-menu-vertical-demo {
-          height: calc(100% - 31px);
+      .el-menu-vertical-demo {
+          height: 100%;
           overflow: auto;
-        }
       }
+  }
 
-      .el-container {
-        width: calc(100% - 200px);
-        height: 100%;
-        margin: -40px 0 0 200px;
-        .el-main {
+  #bodyRef {
+      width: calc(100% - 200px);
+      height: 100%;
+      .el-main {
           width: 100%;
-          height: calc(100% - 20px);
-          position: absolute;
-          
-        }
-        .el-footer {
-          width: 100%;
-          height: 20px;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          line-height: 20px;
-          text-align: center;
-          user-select: none;
-        }
+          height: 100%;
+          .main-body {
+              width: 100%;
+
+              .card-title {
+                  height: 25px;
+                  font-size: 20px;
+                  color: skyblue;
+
+                  .el-icon {
+                  position: relative;
+                  top: 3px;
+                  }
+              }
+
+              .div-card {
+                  margin-top: 10px;
+                  display: flex;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  gap: 10px;
+
+                  &::after {
+                  content: '';
+                  flex: auto;
+                  }
+
+                  @media screen and (max-width: 450px) {
+                  .div-card-body {
+                      width: 100% !important;
+                  }
+                  }
+                  @media screen and (min-width: 450px) and (max-width: 768px) {
+                  gap: 15px;
+                  .div-card-body {
+                      width: calc(100% / 2 - 10px) !important;
+                  }
+                  }
+                  @media screen and (min-width: 768px) and (max-width: 1024px) {
+                  gap: 15px;
+                  .div-card-body {
+                      width: calc(100% / 3 - 10px) !important;
+                  }
+                  }
+                  
+                  .div-card-body {
+                  width: calc(100% / 6 - 10px);
+                  height: 50px;
+                  display: flex;
+                  overflow: hidden;
+                  background-color: rgba(255, 255, 255, 0.2);
+                  opacity: 0.6;
+                  border-radius: 10px;
+                  margin-bottom: 10px;
+                  backdrop-filter: blur(10px);
+
+                  img {
+                      width: 30px;
+                      height: 30px;
+                      margin: auto 0;
+                      padding-left: 10px;
+                  }
+
+                  a {
+                      text-decoration: none;
+                      line-height: 50px;
+                      padding-left: 10px;
+                  }
+                  }
+
+                  .div-card-body:hover {
+                      opacity: 0.9;
+                  }
+              }
+          }
+          .main-body:first-child {
+              margin-top: -20px;
+          }
       }
-    }
   }
 }
 </style>

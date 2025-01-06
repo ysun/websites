@@ -5,7 +5,7 @@ import { webUpdateNotice } from "@plugin-web-update-notification/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Navigation-Websites/',
+  base: '/websites/',
   build: {
     outDir: "docs"
   },

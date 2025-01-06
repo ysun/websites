@@ -8,7 +8,6 @@ import "element-plus/theme-chalk/dark/css-vars.css";
 import zhCn from "element-plus/es/locale/lang/zh-cn";
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
-
 // https://github.com/theajack/disable-devtool/blob/master/README.cn.md
 disableDevtool({url: "https://www.baidu.com/",  timeOutUrl: "https://www.baidu.com/"});
 
