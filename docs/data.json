@@ -303,9 +303,14 @@
                 "imgUrl": "https://css-loaders.com/fav.png"
             },
             {
-                "name": "wangEditor 富文本库",
+                "name": "wangEditor 富文本",
                 "link": "https://www.wangeditor.com/",
                 "imgUrl": "https://www.wangeditor.com/favicon.ico"
+            },
+            {
+                "name": "UEditorPlus 富文本",
+                "link": "https://open-doc.modstart.com/ueditor-plus/",
+                "imgUrl": "https://open-doc.modstart.com/ueditor-plus/favicon.ico"
             },
             {
                 "name": "字体抽取重组",
@@ -323,9 +328,19 @@
                 "imgUrl": "https://static.djangoproject.com/img/icon-touch.e4872c4da341.png"
             },
             {
+                "name": "Robyn",
+                "link": "https://robyn.tech/",
+                "imgUrl": "https://robyn.tech/_next/static/media/robyn_logo.aabca8c0.jpg"
+            },
+            {
                 "name": "Flask",
                 "link": "https://dormousehole.readthedocs.io/en/latest/",
                 "imgUrl": "https://www.w3cschool.cn/attachments/image/20181226/1545802618390094.jpg"
+            },
+            {
+                "name": "FastAPI",
+                "link": "https://fastapi.tiangolo.com/zh/",
+                "imgUrl": "https://fastapi.tiangolo.com/zh/img/favicon.png"
             },
             {
                 "name": "Tornado",
