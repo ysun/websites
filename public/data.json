@@ -40,7 +40,7 @@
             {
                 "name": "博客园",
                 "link": "https://www.cnblogs.com/",
-                "imgUrl": "https://assets.cnblogs.com/favicon_v3_2.ico"
+                "imgUrl": "data:image/png;base64,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"
             },
             {
                 "name": "CSDN",
@@ -313,6 +313,16 @@
                 "imgUrl": "https://open-doc.modstart.com/ueditor-plus/favicon.ico"
             },
             {
+                "name": "Uppy 文件上传",
+                "link": "https://uppy.io/",
+                "imgUrl": "https://uppy.io/img/logo.svg"
+            },
+            {
+                "name": "Plyr 视频播放器",
+                "link": "https://plyr.io/",
+                "imgUrl": "https://cdn.plyr.io/static/icons/favicon.ico"
+            },
+            {
                 "name": "字体抽取重组",
                 "link": "https://ecomfe.github.io/fontmin/",
                 "imgUrl": "https://ecomfe.github.io/fontmin/favicon.ico"
@@ -403,9 +413,19 @@
                 "imgUrl": "https://nodejs.org/static/images/favicons/favicon.png"
             },
             {
+                "name": "Bun",
+                "link": "https://www.bun.sh.cn/",
+                "imgUrl": "data:image/png;base64, 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"
+            },
+            {
                 "name": "Anaconda3 - 清华镜像站",
                 "link": "https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/",
                 "imgUrl": "https://mirrors.tuna.tsinghua.edu.cn/static/img/favicon.png"
+            },
+            {
+                "name": "Miniconda",
+                "link": "https://www.anaconda.com/docs/getting-started/anaconda/install",
+                "imgUrl": "https://mintlify.s3-us-west-1.amazonaws.com/anaconda-29683c67/_generated/favicon/favicon-32x32.png"
             },
             {
                 "name": "Docker",
@@ -418,7 +438,12 @@
                 "imgUrl": "https://code.visualstudio.com/favicon.ico"
             },
             {
-                "name": "JetBrains IDE",
+                "name": "Trae",
+                "link": "https://www.trae.ai/",
+                "imgUrl": "https://lf-cdn.trae.ai/obj/trae-ai-sg/favicon.ico"
+            },
+            {
+                "name": "JetBrains IDE 全家桶",
                 "link": "https://www.jetbrains.com.cn/ides/#choose-your-ide",
                 "imgUrl": "https://www.jetbrains.com.cn/icon-512.png"
             },
@@ -523,6 +548,11 @@
                 "imgUrl": "https://www.jyshare.com/wp-content/uploads/2023/02/openai-avatar.png"
             },
             {
+                "name": "腾讯元宝",
+                "link": "https://yuanbao.tencent.com/",
+                "imgUrl": "https://cdn-bot.hunyuan.tencent.com/logo.png"
+            },
+            {
                 "name": "Coze 国内版",
                 "link": "https://www.coze.cn/",
                 "imgUrl": "https://lf-coze-web-cdn.coze.cn/obj/coze-web-cn/obric/coze/favicon.1970.png"
@@ -551,6 +581,11 @@
                 "name": "火山写作",
                 "link": "https://www.writingo.net/",
                 "imgUrl": "https://lf3-transtudio.bytetos.com/obj/lab-mt-public/fe/writingo/web/favicon.svg"
+            },
+            {
+                "name": "紫东太初",
+                "link": "https://taichu-web.ia.ac.cn/",
+                "imgUrl": "https://taichu-public.wair.ac.cn/chatweb/favicon.ico"
             },
             {
                 "name": "讯飞星火",
@@ -916,6 +951,11 @@
                 "name": "微信公众平台",
                 "link": "https://mp.weixin.qq.com/",
                 "imgUrl": "https://res.wx.qq.com/a/fed_upload/9300e7ac-cec5-4454-b75c-f92260dd5b47/logo-mp.ico"
+            },
+            {
+                "name": "QQ 开放平台",
+                "link": "https://q.qq.com/#/app/bot",
+                "imgUrl": "https://qqminiapp.cdn-go.cn/open-platform/e54b1bfb/favicon.ico"
             },
             {
                 "name": "Cpolar 内网穿透",
